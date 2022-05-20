@@ -9,10 +9,13 @@
 
         <Label Text="IP do Dispositivo: " />
         <Label x:Name="txt_ip" FontSize="Large" />
-    
-        
+
+        <Button Text="Zeroconf" Clicked="abrir" />
+
+
         <Label Text="IP do Gateway: " />
         <Label x:Name="txt_ip_gateway" FontSize="Large" />
+        
 
     </StackLayout>
 
