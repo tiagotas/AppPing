@@ -5,7 +5,7 @@
 
     <StackLayout>
 
-        <Button Text="Pegar IP" Clicked="Button_Clicked" />
+        <Button Text="Pegar IP" Clicked="abrir" />
 
         <Label Text="IP do Dispositivo: " />
         <Label x:Name="txt_ip" FontSize="Large" />

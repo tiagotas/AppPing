@@ -30,10 +30,12 @@ namespace AppPing
                 GatewayIPAddressInformation address = card.GetIPProperties().GatewayAddresses.FirstOrDefault();
 
                 if (address == null)
-                    Console.WriteLine("Endereço Nulo");
+                    DisplayAlert("ERRO", "Endereço Nulo", "OK");
                 else
-                    Console.WriteLine(address.Address);
+                    DisplayAlert("Endereço:", address.Address.ToString(), "OK");
             }
+            else
+                DisplayAlert("ERRO", "Nenhuma placa encontrada", "OK");
         }
 
         private void Button_Clicked(object sender, EventArgs e)
